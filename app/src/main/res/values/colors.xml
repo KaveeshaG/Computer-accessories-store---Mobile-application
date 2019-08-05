@@ -7,4 +7,14 @@
     <color name="darkblue">#01165E</color>
     <color name="input">#ECEDF1</color>
     <color name="link">#889FFC</color>
+    <color name="address">#0556D3</color>
+    <color name="followers">#0D5D98</color>
+    <color name="headings">#3797CF</color>
+    <color name="solidCircle">#AAFFFFFF</color>
+    <color name="circleBorder">#50FFFFFF</color>
+    <color name="gradEnd">#022DA0</color>
+    <color name="gradStart">#005C94</color>
+    <color name="followersBg">#001E4E</color>
+    <color name="followingBg">#02379C</color>
+    <color name="grey">#E5E5E5</color>
 </resources>

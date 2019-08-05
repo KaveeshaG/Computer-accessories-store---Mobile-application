@@ -8,31 +8,32 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class LoginActivity extends AppCompatActivity {
+public class profile extends AppCompatActivity {
 
-    ImageView backBtn;
-    Button loginSBtn;
+    ImageView backpBtn;
+    Button logoutBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_profile);
 
-        backBtn = findViewById(R.id.back);
+        backpBtn = findViewById(R.id.backp);
 
-        backBtn.setOnClickListener(new View.OnClickListener() {
+        backpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
+                Intent intent = new Intent(profile.this, dash.class);
+                startActivity(intent);
             }
         });
 
-        loginSBtn = findViewById(R.id.loginSBtn);
+        logoutBtn = findViewById(R.id.logoutBtn);
 
-        loginSBtn.setOnClickListener(new View.OnClickListener() {
+        logoutBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, dash.class);
+                Intent intent = new Intent(profile.this, LoginActivity.class);
                 startActivity(intent);
             }
         });
